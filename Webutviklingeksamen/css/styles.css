@@ -1,0 +1,867 @@
+body {
+     margin: 0;
+     font-family: 'Roboto', sans-serif;
+     grid-template-rows: auto 1fr auto; 
+     grid-template-columns: 100%; 
+     grid-gap: 20px; 
+   }
+   
+/* Header */
+   .header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 20px;
+     background-color: #fff;
+   }
+   
+   .logo {
+     flex: 1;
+   }
+   
+   .logo img {
+     width: 100px;
+   }
+   
+   .toppmeny {
+     flex: 3;
+     text-align: right;
+   }
+   
+   .toppmeny ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+   }
+   
+   .toppmeny li {
+     display: inline;
+     margin-left: 20px;
+   }
+   
+   .toppmeny li a {
+     text-decoration: none;
+     color: black;
+   }
+   
+   .kontaktknapp {
+     background-color: #e6bd43;
+     color: white;
+     padding: 10px 20px;
+     border-radius: 1px;
+     margin-top: 50px;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     margin-bottom: 10px;
+     font-weight: bolder;
+     border: none;
+   }
+
+   .kontaktknapp:hover {
+     background-color: black;
+     color: #e6bd43;
+   }
+
+   .home {
+    font-weight: bold;
+   }
+
+   /* Banner */
+   .banner {
+    background-image: url(../img/banner3.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh; 
+    margin-bottom: 60px;
+  }
+  
+  .banner h1 {
+    margin: 10px;
+    font-size: 2.5em;
+  }
+  
+  .banner .infotekst {
+    margin: 10px 15%; 
+    font-size: 1em; 
+  }
+  
+  .banner .lesmer {
+    background-color: #e6bd43;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 1px;
+    margin-top: 30px;
+    font-weight: bold;
+    border: none;
+    font-size: 1em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .lesmer {
+    padding-top: 26px;
+    text-decoration: none;
+  }
+
+  .lesmer:hover {
+    background-color: black;
+    color: #e6bd43;
+    cursor: pointer;
+  }
+
+  .banner2 {
+    background-image: url(../img/banner3.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh; 
+    margin-bottom: 60px;
+  }
+  
+  .banner2 h1 {
+    margin: 10px;
+    font-size: 2.5em;
+  }
+
+  /* Tillegsinfo */
+  .overskrift {
+    font-size: 34px; 
+    color: #000; 
+    text-align: center; 
+    letter-spacing: 1px;
+  }
+  
+  .underskrift {
+    font-size: 16px; 
+    color: #666; 
+    margin: 0 auto; 
+    text-align: center; 
+    display: block; 
+    max-width: 656px; 
+    margin-bottom: 60px;
+  }
+
+
+  /* Om firmaet */
+  .omfirmaet {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 40px;
+    padding: 80px;
+    background-color: #e6bd43; 
+    margin: 0;
+    border: none; 
+  }
+  
+  .omfirmabilde {
+    width: 100%; 
+    height: auto; 
+  }
+  
+  .omseksjon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .firmatittel {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  
+  .firmabeskrivelse {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-right: 30px;
+  }
+  
+  .lesmerknapp {
+    width: auto; 
+    max-width: 200px; 
+    border: 3px solid black; 
+    background-color: transparent; 
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center; 
+    display: inline-block; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .lesmerknapp:hover {
+    background-color: black;
+    color: #e6bd43;
+  }
+
+  /* Our Services */
+  .ourservices {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-size: 35px;
+  }
+  
+  .services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .service {
+    padding: 20px;
+    text-align: center; 
+  }
+
+  .service h3 {
+    margin-top: 0; 
+  }
+  
+  .icon {
+    font-size: 30px;
+  }
+
+  /* Sign Up */
+  .newslettersigner {
+    background-color: #f2f2f2; 
+    text-align: center; 
+    padding-top: 60px;
+    padding-bottom: 40px;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .newslettertittel {
+    margin-bottom: 20px;
+    font-size: 33px;
+    letter-spacing: 1px;
+    width: 100%; 
+  }
+  
+  .newsletterfelt {
+    padding: 15px 10px;
+    border: none;
+    font-size: 16px; 
+    color: #999; 
+    outline: none; 
+    width: 200px; 
+    box-sizing: border-box; 
+  }
+  
+  .newsletterfelt::placeholder {
+    color: #999; 
+  }
+  
+  .newsletterknapp {
+    padding: 15px 24px; 
+    border: none;
+    background-color: #e6bd43; 
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .newsletterknapp:hover {
+    background-color: black;
+    color: #e6bd43;
+  }
+
+
+  /* PORTIFOLIO SIDE */
+  
+  .jobseksjon {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.jobseksjon h2 {
+    font-size: 2em;
+    margin: 0 0 10px 0;
+}
+
+.jobseksjon hr {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.jobseksjon button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 1em;
+    cursor: pointer;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.jobseksjon button:hover {
+    background-color: #000000;
+    color: #e6bd43;
+}
+
+.brandingoverskrift {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.brandingoverskrift h2 {
+  font-size: 2em;
+  margin: 0 0 10px 0;
+}
+
+.brandseksjon {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  margin-top: -40px;
+}
+
+.brandseksjon h2 {
+  font-size: 2em; 
+  grid-column: 1 / -1; /* Kilde #1 */
+  margin: 0 0 10px 0; 
+}
+
+.avstand {
+  padding-top: 15px;
+}
+
+.brandseksjon .divider {
+  grid-column: 1 / -1;
+  border: none;
+  height: 4px;
+  background-color: #e6bd43;
+  margin-bottom: 20px;
+}
+
+.brandseksjon article {
+  grid-column: span 2;
+}
+
+.brandseksjon article.large {
+  grid-column: span 3;
+}
+
+.brandseksjon img {
+  width: 100%;
+  display: block;
+}
+
+.brandseksjon p {
+  margin: 0;
+  text-align: left;
+}
+
+.brandseksjon img {
+  width: 100%;
+  display: block;
+  transition: transform 0.2s ease; 
+}
+
+.brandseksjon img:hover {
+  transform: scale(1.05); /* Kilde #2 */
+  transition: transform 0.4s ease-out; 
+}
+
+
+/* ABOUT SIDE */
+.bakgrunnsbilde {
+  background-image: url('../img/banner2.png');
+  height: 80vh; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 40px; 
+}
+
+.tekstboks {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  width: 48%;
+  height: auto; 
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: left;
+  margin-right: 20px; 
+}
+
+.getintouchknapp {
+  background-color: #deb640fe;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 17px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.getintouchknapp:hover {
+  background-color: #000;
+  color: #e6bd43;
+}
+
+.overskrift1 {
+  font-size: 20px;
+  color: #5d5d5d; 
+}
+
+.overskrift2 {
+  font-size: 24px; 
+  color: #000000; 
+  margin-top: 20px; 
+}
+
+.omfirmaetinfo {
+  color: #000000;
+  line-height: 1.6;
+}
+
+.clientlogo {
+  background-color: #f8c146; 
+  text-align: center;
+  padding: 20px 0;
+}
+
+.clientlogo h2 {
+  margin-bottom: 50px;
+  font-size: 1.5em; 
+  margin-top: 40px;
+}
+
+.logoseksjon {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+.logoer {
+  max-width: 100px; 
+  height: auto;
+  margin: 0 15px; 
+  margin-bottom: 20px;
+}
+
+/* Kontaktdel */
+
+.kontaktseksjoner {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  padding: 50px 100px;
+  align-items: flex-start;
+}
+
+.meldingskjema, .kontaktinfo2 {
+  width: calc(50% - 40px);
+}
+
+.kontaktskjema {
+  display: flex;
+  flex-direction: column;
+}
+
+.kontaktskjema label {
+  margin-top: 10px;
+}
+
+.kontaktskjema input, .kontaktskjema textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #f7f7f7; 
+  outline: none; 
+}
+
+.kontaktskjema button {
+  background-color: #e6bd43; 
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 18px 20px; 
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 0.9em;
+  width: auto; 
+  max-width: 150px; 
+  display: block; 
+  margin-left: 0; 
+  font-weight: bold;
+}
+
+.kontaktskjema button:hover {
+  background-color: #000000; 
+  color: #e6bd43; 
+}
+
+.kontaktskjema textarea {
+  height: 150px; 
+  resize: vertical; 
+}
+
+.kontaktinfo2 p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.maillink {
+  color: #0000ff; 
+  text-decoration: underline; 
+}
+
+.maillink:hover {
+  text-decoration: none; 
+}
+
+.googlemap iframe {
+  width: 100%; 
+  height: 300px;
+  border: none;
+}
+
+.topp-knapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.topp-knapp:hover {
+  background-color: #333333; /* Litt mørkere farge ved hover */
+}
+
+   /* Footer */
+   footer {
+    display: grid;
+    grid-template-columns: auto 1fr auto; 
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #252525;
+    color: white; 
+    padding: 3.0rem;
+  }
+  
+  .footerlogo {
+    justify-self: start;
+    max-width: 100px; 
+    height: auto;
+  }
+  
+  footer p {
+    margin: 0;
+    justify-self: center;
+  }
+  
+  .sosialeikoner {
+    justify-self: end; 
+    display: flex;
+    gap: 1.5em; 
+  }
+  
+  .fa-brands {
+    color: #ffffff; 
+    font-size: 1.5em;
+  }
+  
+   @media (max-width: 600px) 
+   /* Header */
+   {
+    .header {
+     flex-direction: column;
+   }
+    .kontaktknapp {
+      margin-top: 20px;
+      margin-bottom: 20px; 
+    }
+   
+     .logo {
+          flex: none;
+     }
+
+     .toppmeny {
+          flex: none;
+          text-align: center;
+     }
+   
+     .toppmeny {
+          text-align: center;
+          flex: none;
+     }
+
+     .toppmeny ul {
+          width: 100%;
+        }
+   
+     .toppmeny li {
+          display: block;
+          margin: 0; 
+          margin-bottom: 20px; 
+          text-align: center;
+        }
+
+      /* Banner */
+      .banner {
+          height: auto; 
+          padding: 20px 10px;
+        }
+      
+      .banner h1 {
+          font-size: 1.5em;
+        }
+      
+      .banner .infotekst {
+          margin: 10px;
+          font-size: 0.9em; 
+          margin-left: 50px;
+          margin-right: 50px;
+        }
+
+        .banner .lesmer {
+          margin-top: 10px;
+        }
+
+        .banner {
+          padding-bottom: 40px;
+        }
+
+        .services {
+          grid-template-columns: 1fr;
+        }
+        .services3 {
+          grid-template-columns: 1fr;
+          margin-right: 90px;
+        }
+        .overskrift {
+          margin-left: 30px;
+          margin-right: 30px;
+        }
+        .underskrift {
+          margin-left: 40px;
+          margin-right: 40px;
+        }
+
+        .lesmer {
+          margin-left: 35px;
+          margin-right: 35px;
+          text-align: left;
+        }
+
+        /* Om firmaet */
+        .omfirmaet {
+          grid-template-columns: 1fr; 
+          text-align: center;
+        }
+
+        .firmatittel {
+          text-align: left;
+        }
+        .firmabeskrivelse {
+          margin-left: 0;
+          margin-right: 0;
+          text-align: left;
+          margin-top: 20px;
+        }
+        .lesmerknapp {
+          font-size: 15px; 
+          max-width: 90%; 
+          text-align: center;
+        }
+    }
+   
+    @media (max-width: 768px) {
+      .services {
+        grid-template-columns: 1fr;
+      }
+      
+
+      .overskrift {
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+      .underskrift {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+
+      /* Om firmaet */
+      .omfirmaet {
+        grid-template-columns: 1fr; 
+        text-align: center;
+        padding: 40px 20px;
+      }
+    
+      .omfirmabilde {
+        width: 90%;
+        height: auto; 
+        margin-top: -5px; 
+        margin-left: 15px;
+      }
+
+      .firmatittel {
+        margin-left: 58px;
+        margin-bottom: 15px;
+        margin-right: 50px;
+        margin-top: -1px;
+        font-size: 20px;
+      }
+    
+      .firmabeskrivelse {
+        margin: 0 60px;
+        text-align: left; 
+      }
+    
+      .lesmerknapp {
+        font-size: 15px; 
+        margin-top: 20px; 
+        margin-left: 58px;
+        max-width: 58%;
+      }
+
+      .newslettertittel {
+        margin-bottom: 20px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        width: 100%; 
+      }
+
+      .newsletterknapp {
+        padding: 15px 8px; 
+        font-size: 13px;
+        margin-right: 10px;
+      }
+
+      .newsletterfelt {
+        padding: 15px 10px;
+        font-size: 16px; 
+        margin-left: 10px;
+      }
+
+      /* Footer */
+      footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 1rem 0; 
+      }
+    
+      .footerlogo {
+        max-width: 80px;
+        margin-bottom: 0.8rem; 
+      }
+    
+      .footerlogo, footer p {
+        justify-self: center;
+        margin-bottom: 0.8em;
+      }
+    
+      .sosialeikoner {
+        justify-self: center;
+        gap: 0.5em; 
+      }
+
+      /* Portofolio */
+      .brandseksjon {
+        grid-template-columns: 1fr; 
+      }
+    
+      .brandseksjon article,
+      .brandseksjon article.large {
+        grid-column: 1; 
+        max-width: 350px;
+        min-width: 200px;
+      }
+      .brandseksjon, .jobseksjon, .brandingoverskrift {
+        padding-right: 35px; 
+        padding-left: 35px; 
+      }
+      .developmentknapp {
+        margin-top: 15px;
+      }
+      .brandingoverskrift {
+        font-size: 12px;
+      }
+      .jobseksjon h2 {
+        font-size: 25px;
+      }
+  .bakgrunnsbilde {
+    padding: 0 20px; 
+  }
+
+  .tekstboks {
+    width: auto; 
+    padding: 20px;
+    padding-right: 10px; 
+    margin-right: -1px;
+  }
+  .getintouchknapp {
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    padding-right: 50px;
+    font-size: 20px;
+    text-align: left;
+  }
+  .overskrift1, .overskrift2 {
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+  }
+  .logoer {
+    max-width: 70px; 
+    height: auto;
+    margin: 0 5px; 
+  }
+  .kontaktseksjoner {
+    flex-direction: column;
+    padding: 20px; 
+  }
+
+  .meldingskjema, .kontaktinfo2 {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+
+  .kontaktskjema button {
+    max-width: 50%; 
+    padding: 10px; 
+  }
+  .google-map iframe {
+    height: 300px; 
+  }
+}
+    
+   
